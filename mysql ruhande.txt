@@ -1,0 +1,284 @@
+mysql> use ruhande;
+Database changed
+mysql> create table ngoma (ID INT(20) , FNAME CHAR(10), LNAME CHAR(10), GENDER CHAR(2), PROVINCE CHAR(20), DISTRICT CHAR(20), SECTOR CHAR(20), CELL CHAR(15), EMAIL CHAR(20), TELEPHONE INT(15));
+Query OK, 0 rows affected, 2 warnings (0.01 sec)
+
+mysql> INSERT INTO NGOMA VALUES ( 1234567890,'KEZA','BETTY','F','SOUTHERN','HUYE','NGOMA','RWIRI','KEZABETTY2@GMAIL.COM',0788888888);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI','KIZUNGU','NTWALIKEA1@GMAIL.COM',0789999999);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI',' at line 1
+mysql> INSERT INTO TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI','KIZUNGU','NTWALIKEA1@GMAIL.COM',0789999999);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI',' at line 1
+mysql> INSERT INTO TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI','KIZUNGU','NTWALIKEA1@GMAIL.COM',0799999999);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI',' at line 1
+mysql> INSERT INTO TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI','KIZUNGU','NTWALIKA1@GMAIL.COM',0799999999);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI',' at line 1
+mysql> INSERT INTO TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI','KIZUNGU','NTWALIKA1@GMAIL.COM',0799999999);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI',' at line 1
+mysql> INSERT INTO  NGOMA VALUES (987654321,'NTWALI','KEA','M','NORTHERN','MUSANZE','BERESHI','KIZUNGU','NTWALIKA1@GMAIL.COM',0799999999);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (9876654321,'NEZA','LEA','F','NORTHERN','GICUMBI','BYUMBA','MIZUNGU','NEZALEA2@GMAIL.COM',0799999799);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (9876234321,'NZIZA','EMMY','M','EASTERN','NYAGATARE','KAGO','RUYENZI','NZIZAEMMY@GMAIL.COM',078959799);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (9876034321,'MUSONI','KEVINE','F','WESTERN','RUBAVU','KIVU','MUNINI','MUSONIKE@GMAIL.COM',072059799);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (1876034321,'TUZA','KENNY','F','KIGALI','GASABO','KARURUMA','KABUYE','TUZAKENNY@GMAIL.COM',072059799);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT*FROM NGOMA;
++------------+--------+--------+--------+----------+-----------+----------+---------+----------------------+-----------+
+| ID         | FNAME  | LNAME  | GENDER | PROVINCE | DISTRICT  | SECTOR   | CELL    | EMAIL                | TELEPHONE |
++------------+--------+--------+--------+----------+-----------+----------+---------+----------------------+-----------+
+| 1234567890 | KEZA   | BETTY  | F      | SOUTHERN | HUYE      | NGOMA    | RWIRI   | KEZABETTY2@GMAIL.COM | 788888888 |
+|  987654321 | NTWALI | KEA    | M      | NORTHERN | MUSANZE   | BERESHI  | KIZUNGU | NTWALIKA1@GMAIL.COM  | 799999999 |
+| 2147483647 | NEZA   | LEA    | F      | NORTHERN | GICUMBI   | BYUMBA   | MIZUNGU | NEZALEA2@GMAIL.COM   | 799999799 |
+| 2147483647 | NZIZA  | EMMY   | M      | EASTERN  | NYAGATARE | KAGO     | RUYENZI | NZIZAEMMY@GMAIL.COM  |  78959799 |
+| 2147483647 | MUSONI | KEVINE | F      | WESTERN  | RUBAVU    | KIVU     | MUNINI  | MUSONIKE@GMAIL.COM   |  72059799 |
+| 1876034321 | TUZA   | KENNY  | F      | KIGALI   | GASABO    | KARURUMA | KABUYE  | TUZAKENNY@GMAIL.COM  |  72059799 |
++------------+--------+--------+--------+----------+-----------+----------+---------+----------------------+-----------+
+6 rows in set (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (1276034321,'TUNGA','EMMA','M','KIGALI','KICUKIRO','GATENGA','GATENGA','TUNGAEMMA@GMAIL.COM',072039799);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (1236034321,'TANGA','DIVINE','F','SOUTHERN','MUHANGA','KABGAYI','KABGAYI','TANGADIVINE@GMAIL.COM',072139799);
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (1236000321,'GIRA','DAN','M','SOUTHERN','KAMONYI','GACURABWENGE','GACURABWENGE','GIRADAN@GMAIL.COM',072100799);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (1736000321,'GABA','DON','M','WESTERN','RUBAVU','GISENYI','GISENYI','GABADON@GMAIL.COM',078900799);,
+Query OK, 1 row affected (0.00 sec)
+
+    -> INSERT INTO  NGOMA VALUES (1736000321,'GABA','DON','M','WESTERN','RUBAVU','GISENYI','GISENYI','GABADON@GMAIL.COM',078900799);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+INSERT INTO  NGOMA VALUES (1736000321,'GABA','DON','M','WESTERN','RUBAVU','GIS' at line 1
+mysql> INSERT INTO  NGOMA VALUES (1736000321,'GABA','DON','M','WESTERN','RUBAVU','GISENYI','GASENYI','GABADON@GMAIL.COM',078900799);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM NGOMA ;
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+
+| ID         | FNAME  | LNAME  | GENDER | PROVINCE | DISTRICT  | SECTOR       | CELL         | EMAIL                | TELEPHONE |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+
+| 1234567890 | KEZA   | BETTY  | F      | SOUTHERN | HUYE      | NGOMA        | RWIRI        | KEZABETTY2@GMAIL.COM | 788888888 |
+|  987654321 | NTWALI | KEA    | M      | NORTHERN | MUSANZE   | BERESHI      | KIZUNGU      | NTWALIKA1@GMAIL.COM  | 799999999 |
+| 2147483647 | NEZA   | LEA    | F      | NORTHERN | GICUMBI   | BYUMBA       | MIZUNGU      | NEZALEA2@GMAIL.COM   | 799999799 |
+| 2147483647 | NZIZA  | EMMY   | M      | EASTERN  | NYAGATARE | KAGO         | RUYENZI      | NZIZAEMMY@GMAIL.COM  |  78959799 |
+| 2147483647 | MUSONI | KEVINE | F      | WESTERN  | RUBAVU    | KIVU         | MUNINI       | MUSONIKE@GMAIL.COM   |  72059799 |
+| 1876034321 | TUZA   | KENNY  | F      | KIGALI   | GASABO    | KARURUMA     | KABUYE       | TUZAKENNY@GMAIL.COM  |  72059799 |
+| 1276034321 | TUNGA  | EMMA   | M      | KIGALI   | KICUKIRO  | GATENGA      | GATENGA      | TUNGAEMMA@GMAIL.COM  |  72039799 |
+| 1236034321 | TANGA  | DIVINE | F      | SOUTHERN | MUHANGA   | KABGAYI      | KABGAYI      | TANGADIVINE@GMAIL.CO |  72139799 |
+| 1236000321 | GIRA   | DAN    | M      | SOUTHERN | KAMONYI   | GACURABWENGE | GACURABWENGE | GIRADAN@GMAIL.COM    |  72100799 |
+| 1736000321 | GABA   | DON    | M      | WESTERN  | RUBAVU    | GISENYI      | GISENYI      | GABADON@GMAIL.COM    |  78900799 |
+| 1736000321 | GABA   | DON    | M      | WESTERN  | RUBAVU    | GISENYI      | GASENYI      | GABADON@GMAIL.COM    |  78900799 |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+
+11 rows in set (0.00 sec)
+
+mysql> DELETE FROM NGOMA WHERE FNAME="GABA",
+    -> DELETE FROM NGOMA WHERE FNAME="GABA";
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+DELETE FROM NGOMA WHERE FNAME="GABA"' at line 1
+mysql> DELETE FROM NGOMA WHERE FNAME="GABA";
+Query OK, 2 rows affected (0.00 sec)
+
+mysql> INSERT INTO  NGOMA VALUES (1736000321,'GABA','DON','M','WESTERN','RUBAVU','GISENYI','GASENYI','GABADON@GMAIL.COM',078900799);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT*FROM NGOMA ;
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+
+| ID         | FNAME  | LNAME  | GENDER | PROVINCE | DISTRICT  | SECTOR       | CELL         | EMAIL                | TELEPHONE |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+
+| 1234567890 | KEZA   | BETTY  | F      | SOUTHERN | HUYE      | NGOMA        | RWIRI        | KEZABETTY2@GMAIL.COM | 788888888 |
+|  987654321 | NTWALI | KEA    | M      | NORTHERN | MUSANZE   | BERESHI      | KIZUNGU      | NTWALIKA1@GMAIL.COM  | 799999999 |
+| 2147483647 | NEZA   | LEA    | F      | NORTHERN | GICUMBI   | BYUMBA       | MIZUNGU      | NEZALEA2@GMAIL.COM   | 799999799 |
+| 2147483647 | NZIZA  | EMMY   | M      | EASTERN  | NYAGATARE | KAGO         | RUYENZI      | NZIZAEMMY@GMAIL.COM  |  78959799 |
+| 2147483647 | MUSONI | KEVINE | F      | WESTERN  | RUBAVU    | KIVU         | MUNINI       | MUSONIKE@GMAIL.COM   |  72059799 |
+| 1876034321 | TUZA   | KENNY  | F      | KIGALI   | GASABO    | KARURUMA     | KABUYE       | TUZAKENNY@GMAIL.COM  |  72059799 |
+| 1276034321 | TUNGA  | EMMA   | M      | KIGALI   | KICUKIRO  | GATENGA      | GATENGA      | TUNGAEMMA@GMAIL.COM  |  72039799 |
+| 1236034321 | TANGA  | DIVINE | F      | SOUTHERN | MUHANGA   | KABGAYI      | KABGAYI      | TANGADIVINE@GMAIL.CO |  72139799 |
+| 1236000321 | GIRA   | DAN    | M      | SOUTHERN | KAMONYI   | GACURABWENGE | GACURABWENGE | GIRADAN@GMAIL.COM    |  72100799 |
+| 1736000321 | GABA   | DON    | M      | WESTERN  | RUBAVU    | GISENYI      | GASENYI      | GABADON@GMAIL.COM    |  78900799 |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA ADD NUMBER INT(5);
+Query OK, 10 rows affected, 1 warning (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 1
+
+mysql> SELECT*FROM NGOMA;
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+| ID         | FNAME  | LNAME  | GENDER | PROVINCE | DISTRICT  | SECTOR       | CELL         | EMAIL                | TELEPHONE | NUMBER |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+| 1234567890 | KEZA   | BETTY  | F      | SOUTHERN | HUYE      | NGOMA        | RWIRI        | KEZABETTY2@GMAIL.COM | 788888888 |   NULL |
+|  987654321 | NTWALI | KEA    | M      | NORTHERN | MUSANZE   | BERESHI      | KIZUNGU      | NTWALIKA1@GMAIL.COM  | 799999999 |   NULL |
+| 2147483647 | NEZA   | LEA    | F      | NORTHERN | GICUMBI   | BYUMBA       | MIZUNGU      | NEZALEA2@GMAIL.COM   | 799999799 |   NULL |
+| 2147483647 | NZIZA  | EMMY   | M      | EASTERN  | NYAGATARE | KAGO         | RUYENZI      | NZIZAEMMY@GMAIL.COM  |  78959799 |   NULL |
+| 2147483647 | MUSONI | KEVINE | F      | WESTERN  | RUBAVU    | KIVU         | MUNINI       | MUSONIKE@GMAIL.COM   |  72059799 |   NULL |
+| 1876034321 | TUZA   | KENNY  | F      | KIGALI   | GASABO    | KARURUMA     | KABUYE       | TUZAKENNY@GMAIL.COM  |  72059799 |   NULL |
+| 1276034321 | TUNGA  | EMMA   | M      | KIGALI   | KICUKIRO  | GATENGA      | GATENGA      | TUNGAEMMA@GMAIL.COM  |  72039799 |   NULL |
+| 1236034321 | TANGA  | DIVINE | F      | SOUTHERN | MUHANGA   | KABGAYI      | KABGAYI      | TANGADIVINE@GMAIL.CO |  72139799 |   NULL |
+| 1236000321 | GIRA   | DAN    | M      | SOUTHERN | KAMONYI   | GACURABWENGE | GACURABWENGE | GIRADAN@GMAIL.COM    |  72100799 |   NULL |
+| 1736000321 | GABA   | DON    | M      | WESTERN  | RUBAVU    | GISENYI      | GASENYI      | GABADON@GMAIL.COM    |  78900799 |   NULL |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE NGOMA SET NUMBER=1 WHERE FNAME="KEZA";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=2 WHERE FNAME="NTWALI";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=1 WHERE FNAME="KEZA";
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=3 WHERE FNAME="NZIZA";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=4 WHERE FNAME="NEZA";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT*FROM NGOMA;
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+| ID         | FNAME  | LNAME  | GENDER | PROVINCE | DISTRICT  | SECTOR       | CELL         | EMAIL                | TELEPHONE | NUMBER |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+| 1234567890 | KEZA   | BETTY  | F      | SOUTHERN | HUYE      | NGOMA        | RWIRI        | KEZABETTY2@GMAIL.COM | 788888888 |      1 |
+|  987654321 | NTWALI | KEA    | M      | NORTHERN | MUSANZE   | BERESHI      | KIZUNGU      | NTWALIKA1@GMAIL.COM  | 799999999 |      2 |
+| 2147483647 | NEZA   | LEA    | F      | NORTHERN | GICUMBI   | BYUMBA       | MIZUNGU      | NEZALEA2@GMAIL.COM   | 799999799 |      4 |
+| 2147483647 | NZIZA  | EMMY   | M      | EASTERN  | NYAGATARE | KAGO         | RUYENZI      | NZIZAEMMY@GMAIL.COM  |  78959799 |      3 |
+| 2147483647 | MUSONI | KEVINE | F      | WESTERN  | RUBAVU    | KIVU         | MUNINI       | MUSONIKE@GMAIL.COM   |  72059799 |   NULL |
+| 1876034321 | TUZA   | KENNY  | F      | KIGALI   | GASABO    | KARURUMA     | KABUYE       | TUZAKENNY@GMAIL.COM  |  72059799 |   NULL |
+| 1276034321 | TUNGA  | EMMA   | M      | KIGALI   | KICUKIRO  | GATENGA      | GATENGA      | TUNGAEMMA@GMAIL.COM  |  72039799 |   NULL |
+| 1236034321 | TANGA  | DIVINE | F      | SOUTHERN | MUHANGA   | KABGAYI      | KABGAYI      | TANGADIVINE@GMAIL.CO |  72139799 |   NULL |
+| 1236000321 | GIRA   | DAN    | M      | SOUTHERN | KAMONYI   | GACURABWENGE | GACURABWENGE | GIRADAN@GMAIL.COM    |  72100799 |   NULL |
+| 1736000321 | GABA   | DON    | M      | WESTERN  | RUBAVU    | GISENYI      | GASENYI      | GABADON@GMAIL.COM    |  78900799 |   NULL |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE NGOMA SET NUMBER=5 WHERE FNAME="MUSONI";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=6 WHERE FNAME="TUZA";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=7 WHERE FNAME="TUNGA";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=8 WHERE FNAME="TANGA";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=9 WHERE FNAME="GIRA";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE NGOMA SET NUMBER=10 WHERE FNAME="GABA";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT*FROM NGOMA;
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+| ID         | FNAME  | LNAME  | GENDER | PROVINCE | DISTRICT  | SECTOR       | CELL         | EMAIL                | TELEPHONE | NUMBER |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+| 1234567890 | KEZA   | BETTY  | F      | SOUTHERN | HUYE      | NGOMA        | RWIRI        | KEZABETTY2@GMAIL.COM | 788888888 |      1 |
+|  987654321 | NTWALI | KEA    | M      | NORTHERN | MUSANZE   | BERESHI      | KIZUNGU      | NTWALIKA1@GMAIL.COM  | 799999999 |      2 |
+| 2147483647 | NEZA   | LEA    | F      | NORTHERN | GICUMBI   | BYUMBA       | MIZUNGU      | NEZALEA2@GMAIL.COM   | 799999799 |      4 |
+| 2147483647 | NZIZA  | EMMY   | M      | EASTERN  | NYAGATARE | KAGO         | RUYENZI      | NZIZAEMMY@GMAIL.COM  |  78959799 |      3 |
+| 2147483647 | MUSONI | KEVINE | F      | WESTERN  | RUBAVU    | KIVU         | MUNINI       | MUSONIKE@GMAIL.COM   |  72059799 |      5 |
+| 1876034321 | TUZA   | KENNY  | F      | KIGALI   | GASABO    | KARURUMA     | KABUYE       | TUZAKENNY@GMAIL.COM  |  72059799 |      6 |
+| 1276034321 | TUNGA  | EMMA   | M      | KIGALI   | KICUKIRO  | GATENGA      | GATENGA      | TUNGAEMMA@GMAIL.COM  |  72039799 |      7 |
+| 1236034321 | TANGA  | DIVINE | F      | SOUTHERN | MUHANGA   | KABGAYI      | KABGAYI      | TANGADIVINE@GMAIL.CO |  72139799 |      8 |
+| 1236000321 | GIRA   | DAN    | M      | SOUTHERN | KAMONYI   | GACURABWENGE | GACURABWENGE | GIRADAN@GMAIL.COM    |  72100799 |      9 |
+| 1736000321 | GABA   | DON    | M      | WESTERN  | RUBAVU    | GISENYI      | GASENYI      | GABADON@GMAIL.COM    |  78900799 |     10 |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+----------------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA DROP COLUMN EMAIL;
+Query OK, 10 rows affected (0.06 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELECT*FROM NGOMA;
++------------+--------+--------+--------+----------+-----------+--------------+--------------+-----------+--------+
+| ID         | FNAME  | LNAME  | GENDER | PROVINCE | DISTRICT  | SECTOR       | CELL         | TELEPHONE | NUMBER |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+-----------+--------+
+| 1234567890 | KEZA   | BETTY  | F      | SOUTHERN | HUYE      | NGOMA        | RWIRI        | 788888888 |      1 |
+|  987654321 | NTWALI | KEA    | M      | NORTHERN | MUSANZE   | BERESHI      | KIZUNGU      | 799999999 |      2 |
+| 2147483647 | NEZA   | LEA    | F      | NORTHERN | GICUMBI   | BYUMBA       | MIZUNGU      | 799999799 |      4 |
+| 2147483647 | NZIZA  | EMMY   | M      | EASTERN  | NYAGATARE | KAGO         | RUYENZI      |  78959799 |      3 |
+| 2147483647 | MUSONI | KEVINE | F      | WESTERN  | RUBAVU    | KIVU         | MUNINI       |  72059799 |      5 |
+| 1876034321 | TUZA   | KENNY  | F      | KIGALI   | GASABO    | KARURUMA     | KABUYE       |  72059799 |      6 |
+| 1276034321 | TUNGA  | EMMA   | M      | KIGALI   | KICUKIRO  | GATENGA      | GATENGA      |  72039799 |      7 |
+| 1236034321 | TANGA  | DIVINE | F      | SOUTHERN | MUHANGA   | KABGAYI      | KABGAYI      |  72139799 |      8 |
+| 1236000321 | GIRA   | DAN    | M      | SOUTHERN | KAMONYI   | GACURABWENGE | GACURABWENGE |  72100799 |      9 |
+| 1736000321 | GABA   | DON    | M      | WESTERN  | RUBAVU    | GISENYI      | GASENYI      |  78900799 |     10 |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT ID,LNAME,GENDER,TELEPHONE FROM NGOMA;
++------------+--------+--------+-----------+
+| ID         | LNAME  | GENDER | TELEPHONE |
++------------+--------+--------+-----------+
+| 1234567890 | BETTY  | F      | 788888888 |
+|  987654321 | KEA    | M      | 799999999 |
+| 2147483647 | LEA    | F      | 799999799 |
+| 2147483647 | EMMY   | M      |  78959799 |
+| 2147483647 | KEVINE | F      |  72059799 |
+| 1876034321 | KENNY  | F      |  72059799 |
+| 1276034321 | EMMA   | M      |  72039799 |
+| 1236034321 | DIVINE | F      |  72139799 |
+| 1236000321 | DAN    | M      |  72100799 |
+| 1736000321 | DON    | M      |  78900799 |
++------------+--------+--------+-----------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT ID,FNAME,LNAME,DISTRICT FROM NGOMA WHERE NUMBER=3;
++------------+-------+-------+-----------+
+| ID         | FNAME | LNAME | DISTRICT  |
++------------+-------+-------+-----------+
+| 2147483647 | NZIZA | EMMY  | NYAGATARE |
++------------+-------+-------+-----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT*FROM NGOMA WHERE CELL="GACURABWENGE";
++------------+-------+-------+--------+----------+----------+--------------+--------------+-----------+--------+
+| ID         | FNAME | LNAME | GENDER | PROVINCE | DISTRICT | SECTOR       | CELL         | TELEPHONE | NUMBER |
++------------+-------+-------+--------+----------+----------+--------------+--------------+-----------+--------+
+| 1236000321 | GIRA  | DAN   | M      | SOUTHERN | KAMONYI  | GACURABWENGE | GACURABWENGE |  72100799 |      9 |
++------------+-------+-------+--------+----------+----------+--------------+--------------+-----------+--------+
+1 row in set (0.00 sec)
+
+mysql> SELECT*FROM NGOMA WHERE GENDER="F" AND PROVINCE="SOUTHERN";
++------------+-------+--------+--------+----------+----------+---------+---------+-----------+--------+
+| ID         | FNAME | LNAME  | GENDER | PROVINCE | DISTRICT | SECTOR  | CELL    | TELEPHONE | NUMBER |
++------------+-------+--------+--------+----------+----------+---------+---------+-----------+--------+
+| 1234567890 | KEZA  | BETTY  | F      | SOUTHERN | HUYE     | NGOMA   | RWIRI   | 788888888 |      1 |
+| 1236034321 | TANGA | DIVINE | F      | SOUTHERN | MUHANGA  | KABGAYI | KABGAYI |  72139799 |      8 |
++------------+-------+--------+--------+----------+----------+---------+---------+-----------+--------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT*FROM NGOMA WHERE GENDER="M" OR PROVINCE="SOUTHERN";
++------------+--------+--------+--------+----------+-----------+--------------+--------------+-----------+--------+
+| ID         | FNAME  | LNAME  | GENDER | PROVINCE | DISTRICT  | SECTOR       | CELL         | TELEPHONE | NUMBER |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+-----------+--------+
+| 1234567890 | KEZA   | BETTY  | F      | SOUTHERN | HUYE      | NGOMA        | RWIRI        | 788888888 |      1 |
+|  987654321 | NTWALI | KEA    | M      | NORTHERN | MUSANZE   | BERESHI      | KIZUNGU      | 799999999 |      2 |
+| 2147483647 | NZIZA  | EMMY   | M      | EASTERN  | NYAGATARE | KAGO         | RUYENZI      |  78959799 |      3 |
+| 1276034321 | TUNGA  | EMMA   | M      | KIGALI   | KICUKIRO  | GATENGA      | GATENGA      |  72039799 |      7 |
+| 1236034321 | TANGA  | DIVINE | F      | SOUTHERN | MUHANGA   | KABGAYI      | KABGAYI      |  72139799 |      8 |
+| 1236000321 | GIRA   | DAN    | M      | SOUTHERN | KAMONYI   | GACURABWENGE | GACURABWENGE |  72100799 |      9 |
+| 1736000321 | GABA   | DON    | M      | WESTERN  | RUBAVU    | GISENYI      | GASENYI      |  78900799 |     10 |
++------------+--------+--------+--------+----------+-----------+--------------+--------------+-----------+--------+
+7 rows in set (0.00 sec)
